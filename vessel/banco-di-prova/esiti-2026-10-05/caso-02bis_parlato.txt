@@ -1,0 +1,6 @@
+S1: Ho perso un nodo! Il tecnico ha cambiato quello guasto con uno nuovo, identico. E io non lo trovo.
+S2: Tu dici: è identico, e l'IP è lo stesso. Ma io non lo cerco per IP. Lo cerco per nome.
+S3: All'avvio chiamo ogni nodo col nome del progetto, e solo dopo gli assegno io l'IP. Ma un nodo nuovo di fabbrica esce senza nome.
+S4: E il nome, da solo, non posso darglielo: in questo progetto non so chi è collegato a quale porta.
+S5: Glielo dai tu dal PC: lo scegli dal MAC, fai lampeggiare il LED per essere sicuro che è lui, e scrivi il nome del progetto.
+S6: Eccolo! Per me un nodo è il suo nome. Commenta NOME. Mr. Automation Italia: dove la curiosità diventa competenza.

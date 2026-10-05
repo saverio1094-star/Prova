@@ -1,0 +1,7 @@
+S1: Sembrano uguali. Ma quando passa questo pezzo, quale dei due lo vede?
+S2: È metallo: induttivo. Ci passo la chiave: l'acciaio assorbe energia dal suo campo magnetico. LED acceso.
+S3: Passa il pezzo… LED spento. Ma non era metallo?
+S4: Metallo sì, ma alluminio. La distanza di intervento vale per l'acciaio: qui è meno di metà. Lo avvicino.
+S5: Lo vede. Seguiamo il pezzo al lavaggio: l'acqua deve arrivare a questo segno.
+S6: L'acqua non è metallo: capacitivo. Ma sente quasi tutto: l'acqua è sotto, e lui è acceso. Vede il vetro. Abbasso la sensibilità: spento.
+S7: Prima guardi di cosa è fatto: se è metallo, quale. Commenta SENSORE. Mr. Automation Italia: dove la curiosità diventa competenza.

@@ -1,0 +1,7 @@
+S1: Ho perso un nodo! L'hanno sostituito con uno identico. Lo cerco su tutta la rete… e non risponde.
+S2: «È guasto anche il nuovo?» No. Il PC non dice «non raggiungibile», dice «pronto per l'assegnazione»: il MAC c'è, il nome no.
+S3: «Il nome? Ma l'IP gliel'ho messo uguale!» Non basta: io i nodi li riconosco dal nome. L'IP glielo do io, dopo.
+S4: Ma nuovo di fabbrica, il nome non ce l'ha. Se non glielo do io da solo, glielo dai tu.
+S5: Lo scegli dal MAC, fai lampeggiare il suo LED per sicurezza, e gli assegni il nome che ha nel progetto.
+S6: Eccolo! Lo riconosco e gli do l'IP. Prima il nome, poi l'IP.
+S7: Vuoi imparare le reti? Commenta NOME. Mr. Automation Italia: dove la curiosità diventa competenza.

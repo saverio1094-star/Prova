@@ -1,0 +1,7 @@
+S1: Ho perso un nodo! Il ricambio è identico… ma non risponde.
+S2: «L'IP è giusto, sarà rotto anche questo!» No: i nodi li riconosco dal nome. L'IP glielo do io.
+S3: Nuovo di fabbrica, il nome non ce l'ha. E il LED verde? Dice solo che il cavo c'è.
+S4: Rotto o senza nome? Dal PC lo vedi: rotto sarebbe «non raggiungibile»; questo è «pronto per l'assegnazione».
+S5: Lo scegli dal MAC, lo fai lampeggiare per essere sicuro che sia lui, gli dai il nome… Ritrovato!
+S6: Con la topologia nel progetto e un nodo che lo supporta, il nome glielo davo io. Qui mancava.
+S7: Prima il nome, poi l'IP. Vuoi impararlo? Commenta NOME. Mr. Automation Italia: dove la curiosità diventa competenza.

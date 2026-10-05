@@ -1,0 +1,7 @@
+S1: Ho perso un nodo! Non mi arrivano più i suoi dati: guasto stazione.
+S2: Il tecnico l'ha cambiato con uno identico, e la porta ha il LED verde. Quindi lo ritrovo… No. Cosa manca?
+S3: Manca il nome. Quel verde dice solo che il cavo c'è: io un nodo lo riconosco dal nome, non dall'IP.
+S4: E uno nuovo di fabbrica il nome non ce l'ha. Con certi nodi glielo do io, se nel progetto c'è la topologia. Qui no.
+S5: Allora tocca a te. Il PC lo vede pronto per l'assegnazione: c'è, gli manca solo il nome. Lo scegli dal MAC e glielo dai.
+S6: Eccolo! Lo riconosco dal nome e l'IP glielo do io. Nodo nuovo? Prima il nome.
+S7: Vuoi impararlo? Commenta NOME. Mr. Automation Italia: dove la curiosità diventa competenza.

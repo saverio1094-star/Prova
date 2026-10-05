@@ -1,0 +1,7 @@
+S1: Il PLC deve sapere quando passa questo pezzo, senza toccarlo. Sembrano uguali: induttivo o capacitivo?
+S2: È metallo, quindi induttivo. Fa un campo magnetico alternato: la chiave ne assorbe energia e il sensore commuta.
+S3: Passa il pezzo… resta spento. Ma è metallo anche lui!
+S4: Metallo sì, ma alluminio. La distanza dichiarata vale per l'acciaio: sull'alluminio è meno della metà. Lo avvicino… e lo vede.
+S5: Seguiamo il pezzo in lavatrice. Lì il PLC vuole sapere il livello dell'acqua nella vasca.
+S6: L'acqua non è metallo: qui va il capacitivo. Sente poco il vetro, tantissimo l'acqua. Lo regolo: col solo vetro, resta spento.
+S7: Prima guardi di cosa è fatto, poi scegli. Commenta SENSORE. Mr. Automation Italia: dove la curiosità diventa competenza.

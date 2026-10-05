@@ -1,0 +1,7 @@
+S1: Stanotte questa linea si è fermata tre volte. E io so a che ora.
+S2: Sono il PLC. Ogni volta che vado in STOP, scrivo una riga nel buffer di diagnostica, con data e ora.
+S3: Il mio web server l'hanno attivato, l'orologio l'hanno regolato: apri un browser e scrivi il mio indirizzo IP.
+S4: Ecco le tre righe di STOP. Guardi quella in alto: «È la prima fermata, no?»
+S5: La prima? Non è detto. La prima te la dice l'ora, non la posizione: è quella dell'una e dodici.
+S6: Ma leggimi prima di spegnermi: quando il buffer è pieno, le righe nuove cancellano le vecchie, e da spento tengo solo le ultime.
+S7: L'ora, non la riga. Vuoi imparare a leggere la diagnostica? Commenta DIAGNOSI. Mr. Automation Italia: dove la curiosità diventa competenza.

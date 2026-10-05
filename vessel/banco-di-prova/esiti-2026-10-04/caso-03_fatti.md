@@ -1,0 +1,60 @@
+# Scheda dei fatti · «Stanotte questa linea si è fermata tre volte. E io so a che ora.» · 2026-10-04 · Granite
+
+**Filo proposto da Vessel:** la CPU registra ogni evento con data e ora nel buffer di diagnostica, e lo si legge dal web server con un browser; ma l'ordine delle righe può ingannare chi legge. · **Notebook usati:** Brain 5b0396dd (chat + testo delle fonti), Brain 2 ae39f678 (3 fonti nuove, verificate sul testo: chat in errore) · **Copertura del tema:** parziale prima di oggi (solo Easy Book S7-1200 del 03/2014), buona dopo le 3 fonti aggiunte. Resta scoperto: l'ordine delle righe **nella pagina web** (vedi F6).
+
+Sigle: EB = SIMATIC S7-1200 Easy Book, 03/2014 (Brain 5b0396dd) · G2 = S7-1200 G2 System Manual V1.0.1, 04/2025 (Brain 2) · DO = Diagnostics Overview S7-1200/S7-1500, V1.0, 09/2018 (Brain 2) · WS = S7-1500 Web server Function Manual, 12/2014 (Brain 2).
+
+## Fatti (solo questi entrano nel parlato)
+| # | Fatto, per il caso delimitato | Fonte (notebook · documento · pagina o sezione) | Limite che va con il fatto | Stato |
+|---|---|---|---|---|
+| F1 | La CPU tiene un buffer di diagnostica con una voce per ogni evento di diagnostica; ogni voce ha data e ora, categoria e descrizione. «Each entry includes a date and time the event occurred, an event category, and an event description.» | 5b0396dd · EB · §11.10 p. 267 · ae39f678 · G2 · §4.4.9 p. 86 | data e ora sono quelle dell'orologio della CPU (vedi F9, F10) | CONFERMATO |
+| F2 | Nel buffer finisce ogni cambio di stato della CPU: «each power up, each transition to STOP, each transition to RUN», oltre agli errori della CPU e dei moduli. Tre fermate in STOP = tre voci di passaggio a STOP. | ae39f678 · G2 · §4.4.9 p. 87 · 5b0396dd · EB · §11.10 p. 267 («transition of the CPU operating mode») | vale per le fermate in cui **la CPU** va in STOP; una linea ferma con la CPU in RUN (es. fermata gestita dal programma) non è un cambio di stato della CPU | CONFERMATO |
+| F3 | Le voci sono in ordine cronologico **con l'evento più recente in cima**: la prima riga che leggi è l'ultima cosa successa, non la prima. «The entries are displayed in chronological order, with the most recent event at the top.» | 5b0396dd · EB · §11.10 p. 267 · ae39f678 · G2 · §4.4.9 p. 86 | la frase è scritta per il buffer visto col software di programmazione collegato online; per la pagina web vedi F6 | CONFERMATO |
+| F4 | Il buffer ha un numero massimo di voci: quando è pieno, la voce nuova cancella la più vecchia; a CPU spenta se ne conserva solo una parte (le più recenti). | 5b0396dd · EB · §11.10 p. 267 · ae39f678 · G2 · §4.4.9 p. 86 | il numero dipende dalla CPU: «different numbers of alarms depending on the CPU used» (WS §3.3 p. 27). Vedi Numeri | CONFERMATO |
+| F5 | La CPU ha un web server integrato: con un browser si legge la diagnostica, compresa la pagina del buffer di diagnostica, da PC o smartphone **senza il software di programmazione installato**. «…without an installed TIA Portal.» | ae39f678 · DO · §3.1.3 p. 20 · 5b0396dd · EB · §9 p. 193 e §9.1 p. 194 | solo se F7 è già stato fatto; si raggiunge con l'indirizzo IP della CPU (F8) | CONFERMATO |
+| F6 | Nella pagina «Diagnostics buffer» del web server le voci sono mostrate a gruppi («Diagnostics buffer entries 1-50», si sceglie l'intervallo da un menu), ogni evento con data e ora; cliccando una riga si vedono i dettagli sotto. | ae39f678 · WS · §3.3 pp. 27-28 · 5b0396dd · EB · §9.1 p. 194, §9.2.1 p. 197 | **che anche nella pagina web la più recente sia in cima non è scritto in nessuna fonte** (le fonti lo dicono per il buffer in generale, F3). Il parlato può dire «guarda l'ora, non la posizione»: regge in ogni caso | PARZIALE |
+| F7 | Il web server **di fabbrica è spento**: va attivato nelle proprietà della CPU, e chi legge la pagina deve avere il diritto «Query diagnostics» (interrogare la diagnostica). «The web server of the CPU is disabled by default.» | ae39f678 · DO · §3.1.3 p. 20 · 5b0396dd · EB · §9.1 p. 194 | l'attivazione e gli utenti si impostano nella configurazione della CPU, cioè col software, una volta, prima: «senza software» vale per **leggere**, non per accendere il web server | CONFERMATO |
+| F8 | Al web server si arriva digitando l'indirizzo IP della CPU nel browser, collegati alla porta PROFINET/Ethernet della CPU; da fuori dalla rete protetta, la fonte prescrive una VPN. | 5b0396dd · EB · §9.2 p. 196, §9 p. 195 (avvertenze di sicurezza), §1.1 p. 15 | se il browser non accetta un indirizzo IP diretto, la fonte rimanda all'amministratore IT | CONFERMATO |
+| F9 | L'ora delle voci è l'**ora di sistema** della CPU; di fabbrica (o dopo un ripristino) l'orologio ha un valore predefinito e **va impostato**; se il fuso orario del PC con cui lo si imposta è diverso da quello configurato nella CPU, le voci possono avere «unexpected timestamps». | ae39f678 · G2 · §4.4 pp. 87-88 (orologio, nota «Time zone differences») | detto per la S7-1200 G2; è il motivo per cui «so a che ora» vale solo con l'orologio della CPU impostato bene | CONFERMATO |
+| F10 | Nel web server, se il browser non accetta i cookie, tutte le ore sono mostrate in UTC e non si può passare all'ora del PLC; con i cookie si sceglie fra UTC e ora del PLC. | 5b0396dd · EB · §9.2.2 p. 198 | dall'Easy Book 2014 (S7-1200); in Italia l'UTC è 1 ora indietro d'inverno e 2 d'estate (questo calcolo non è nelle fonti: conto di Granite) | CONFERMATO |
+| F11 | Esempio di causa che porta in STOP: se il tempo di ciclo massimo viene superato due volte nella stessa scansione (e non è mai stato caricato l'OB dell'errore di tempo), la CPU scrive una voce nel buffer e va in STOP. | ae39f678 · G2 · p. 66 del PDF (errori di tempo) · 5b0396dd · EB · §4.4 tab. 4-2 p. 58 | è un caso; altri errori (es. errore di accesso all'I/O) scrivono la voce e la CPU **resta in RUN** (EB tab. 4-2) | CONFERMATO |
+| F12 | Le voci del buffer si possono salvare dal web server in un file csv. | ae39f678 · WS · §2.4 p. 20 | detto nel manuale del web server S7-1500 | CONFERMATO |
+| F13 | Il LED RUN/STOP della CPU: giallo fisso = STOP, verde fisso = RUN, giallo e verde alternati = avviamento. | 5b0396dd · EB · p. 32 e §4.1 p. 52 | S7-1200, Easy Book 2014 | CONFERMATO |
+
+## Numeri confermati
+- 50 voci in tensione, 10 conservate a CPU spenta — buffer della S7-1200 (prima generazione) — EB §11.10 p. 267, edizione 03/2014
+- 500 voci, 100 conservate a CPU spenta — buffer della S7-1200 G2 — G2 §4.4.9 p. 86, edizione 04/2025
+- Il numero cambia con la CPU (WS §3.3 p. 27): se in scena c'è «una CPU» senza modello, **nessun numero**; se serve un numero, si porta uno solo, insieme alla CPU a cui appartiene.
+- 2 superamenti del tempo di ciclo massimo nella stessa scansione → STOP (senza OB dell'errore di tempo) — G2 p. 66 PDF, 04/2025; EB tab. 4-2 p. 58, 03/2014
+
+## Termini veri
+- buffer di diagnostica (diagnostics buffer) — registro della CPU con una voce per evento: data e ora, categoria, descrizione (EB §11.10)
+- web server — server web dentro la CPU che mostra pagine di diagnostica e dati a un browser (EB §9; DO §3.1.3) (nel video senza marchio: «il web server del PLC», «la pagina del PLC nel browser»)
+- pagina «Buffer di diagnostica» (Diagnostics buffer) — la pagina del web server che mostra le voci, con i dettagli della voce selezionata (WS §3.3)
+- passaggio a STOP / a RUN — cambio di modo operativo della CPU: in STOP il programma non gira (EB §4.1 p. 52)
+- diritto «Query diagnostics» — permesso utente per vedere le pagine di diagnostica (DO §3.1.3) (nel video: «un utente con il permesso di leggere la diagnostica»)
+- ora di sistema / UTC / ora del PLC — l'ora su cui si basano le voci; UTC = tempo coordinato universale (G2 §4.4; EB §9.2.2)
+- tempo di ciclo massimo — durata massima di una scansione configurata nella CPU (G2; EB tab. 4-2)
+- marchi da togliere: S7-1200, S7-1500, TIA Portal, STEP 7 → «il PLC», «la CPU», «il software di programmazione»
+
+## Errore plausibile di chi guarda
+1. **«La prima riga è la causa».** Chi apre il buffer legge la riga in cima e la prende per l'origine del guasto: invece in cima c'è l'evento **più recente** → corretto da F3. Per la causa si scende verso le voci più vecchie e si confrontano le ore; nella pagina web l'ordine non è scritto nelle fonti (F6), quindi la regola che regge sempre è «guarda la colonna dell'ora, non la posizione».
+2. **«Il buffer tiene tutta la notte».** Ha un numero massimo di voci, a buffer pieno la nuova cancella la più vecchia, e a CPU spenta ne resta solo una parte → corretto da F4. Se dopo la prima fermata la linea ha generato molti eventi, o qualcuno ha spento il quadro, la prima voce può non esserci più.
+3. **«L'ora sulla riga è l'ora dell'orologio a muro».** Vale solo se l'orologio della CPU è stato impostato e il fuso è giusto (F9); la pagina web senza cookie mostra tutto in UTC (F10).
+4. **«Basta il browser».** Il browser basta per leggere, ma il web server di fabbrica è spento e serve un utente con il permesso di diagnostica: qualcuno deve averlo attivato prima, col software (F7).
+
+## Dove sta davvero il componente
+quadro elettrico di bordo macchina · altezza: zona bassa del quadro (zona logica, aria più fresca), su guida DIN accanto a moduli I/O e switch di rete · lato: il quadro sta a bordo linea, di solito sul lato manutenzione, sportello che si apre verso il corridoio · cosa ha intorno: moduli I/O, switch di rete, relè/PLC di sicurezza accanto; drive e contattori nella zona di mezzo; alimentatore 24 V e sezionatore in alto · cavo: dalla porta PROFINET **sul fondo** della CPU allo switch nel quadro e da lì alla rete dell'impianto, dove si collega il PC o il telefono che apre il browser (F8) · fonte: SET-TIPO §0 (quadro di bordo macchina) e §0-bis (PLC, ricerca Planimetrie d1f8acfd del 24/9); porta sul fondo: EB §1.1 p. 15
+Com'è fatto (per il disegno): EB §1.1 p. 15 — connettore di alimentazione, slot della memory card sotto lo sportellino superiore, morsettiere estraibili dietro gli sportellini, LED di stato degli I/O integrati, connettore PROFINET sul fondo; LED RUN/STOP giallo quando la CPU è in STOP (F13). Il disegno d'ingombro non è stato cercato: se serve, chiedere al Brain 5b0396dd la pagina e leggerla con `source fulltext`.
+
+## Non confermato — il parlato non lo usa
+- Che nella pagina web del buffer la voce più recente sia in cima — cercato in EB §9, WS §3.3, DO §3.1.3: le fonti mostrano gli intervalli «1-50» ma non scrivono l'ordine. (La frase «più recente in cima» c'è solo per il buffer in generale, F3.)
+- Che la voce di passaggio a STOP contenga nei dettagli il motivo dello STOP, o che la voce della causa stia subito sotto quella di STOP — il Brain 5b0396dd lo ha affermato, ma la frase citata dice solo «select the individual event to display detailed information»: nessuna fonte lo scrive.
+- Una regola per riconoscere «il primo evento della catena» (la causa) fra tanti allarmi — le fonti non danno un metodo di analisi delle cause; c'è solo l'ordine per data e ora.
+- Che con l'orologio non impostato compaiano date del 1970 — il Brain l'ha dedotto dagli screenshot; nel testo c'è solo «default value out of the box» (G2).
+
+## Aggiunto ai notebook oggi
+- Diagnostics Overview for SIMATIC S7-1200 and S7-1500 (V1.0, 09/2018) → ae39f678 (https://cache.industry.siemens.com/dl/files/283/109752283/att_963145/v2/109752283_Diagnostic_Overview_DOC_V10_en.pdf)
+- S7-1200 G2 System Manual (V1.0.1, 04/2025) → ae39f678 (https://cache.industry.siemens.com/dl/files/293/109988293/att_1327503/v1/S71200_G2_system_manual_en-US_en-US.pdf)
+- S7-1500 Web server Function Manual (12/2014) → ae39f678 (https://cache.industry.siemens.com/dl/files/560/59193560/att_109202/v1/s71500_webserver_function_manual_en-US_en-US.pdf)
+- Nessuna sintesi caricata come testo. Ricerca in `caso-03_ricerca.md`. **Da fare:** la domanda di verifica sul Brain 2 è fallita 5 volte (errore della chat, non delle fonti): i fatti da ae39f678 sono stati controllati sul testo delle fonti nel notebook (`source fulltext`); rifarla quando la chat torna.

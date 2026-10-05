@@ -1,0 +1,7 @@
+S1: Stanotte questa linea si è fermata tre volte. E io so a che ora.
+S2: Sono la CPU. Ogni volta che vado in STOP scrivo una riga nel mio buffer di diagnostica, con l'ora.
+S3: Non ti serve il software di programmazione: il web server l'hanno attivato. Apri il browser e scrivi il mio IP.
+S4: Ecco il buffer. La prima riga dice: passaggio a STOP, 4:51. E pensi: «È cominciato tutto lì.»
+S5: È la prima che leggi, non la prima che è successa. Guarda l'ora: la prima fermata è alle 23:40.
+S6: Vai alla riga delle 23:40 e cliccala: sotto compaiono i dettagli. È da lì che cominci a cercare il perché.
+S7: Guarda l'ora, non la posizione. Vuoi impararlo? Commenta DIAGNOSI. Mr. Automation Italia: dove la curiosità diventa competenza.

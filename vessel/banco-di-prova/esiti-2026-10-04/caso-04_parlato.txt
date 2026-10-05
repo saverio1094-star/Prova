@@ -1,0 +1,7 @@
+S1: Questo cavo si è rotto dentro la catena portacavi. Sfortuna? No. Guarda bene la guaina.
+S2: Si è avvitato a spirale: è l'effetto cavaturaccioli. Cresce ciclo dopo ciclo, e intanto dentro i conduttori si rompono.
+S3: Eppure era flessibile, e della sezione giusta! Cosa non andava?
+S4: Flessibile non vuol dire da catena. Questo ha i conduttori a strati: nel movimento continuo, su corse lunghe, si avvita.
+S5: Quindi scelgo un cavo dichiarato per catena, e guardo il suo raggio minimo: la curva della catena non deve essere più stretta.
+S6: Ma questa fascetta la taglio: dove la catena si muove, i cavi stanno sciolti, con gioco, mai legati fra loro.
+S7: Cavo per catena, raggio giusto, cavi sciolti: non è sfortuna. Commenta METODO. Mr. Automation Italia: dove la curiosità diventa competenza.

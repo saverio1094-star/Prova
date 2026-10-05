@@ -1,0 +1,7 @@
+S1: Ho perso un nodo! Il tecnico l'ha cambiato con uno nuovo, identico. Non lo trovo.
+S2: Lui pensa: stesso modello, stesso IP, deve andare. Ma l'IP glielo do io. Io il nodo lo cerco per nome.
+S3: All'avvio cerco ogni nodo del mio progetto col suo nome. E uno nuovo di fabbrica un nome non ce l'ha.
+S4: Eppure il LED della porta è verde! È guasto anche lui? No: quel verde dice solo che il cavo c'è.
+S5: Sul PC leggi «pronto per l'assegnazione», non «non raggiungibile». Gli manca solo il nome.
+S6: Il tecnico lo sceglie dal MAC, lo fa lampeggiare e gli dà il nome del mio progetto. Eccolo! Lo ritrovo.
+S7: Stesso modello non basta: serve lo stesso nome. Vuoi impararlo? Commenta NOME. Mr. Automation Italia: dove la curiosità diventa competenza.

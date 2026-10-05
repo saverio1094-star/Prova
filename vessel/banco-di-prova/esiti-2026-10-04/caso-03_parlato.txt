@@ -1,0 +1,7 @@
+S1: Stanotte questa linea si è fermata tre volte. E io so a che ora.
+S2: Sono il PLC: ogni STOP lo scrivo nel mio buffer di diagnostica, con data, ora e cosa è successo.
+S3: Per leggerlo non ti serve il software. Se il mio web server è attivo, scrivi il mio IP nel browser.
+S4: Eccole. Tu leggi la riga in cima e pensi: «È partito tutto da qui.»
+S5: Semmai è finito qui. Nel mio buffer la più recente sta in cima: l'ultima cosa successa, non la prima.
+S6: Quindi guarda l'ora: la prima fermata è delle due e dieci. Tocchi la riga e leggi i dettagli.
+S7: L'ora, non la posizione. Commenta DIAGNOSI. Mr. Automation Italia: dove la curiosità diventa competenza.

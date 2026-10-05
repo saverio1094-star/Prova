@@ -1,0 +1,9 @@
+S1: Ho perso un nodo! Lo cerco in tutta la rete… e lui è lì: l'hai appena cambiato.
+S2: «È identico, ha lo stesso IP!» Ma io i nodi non li riconosco dall'IP: li riconosco dal nome.
+S3: E uno nuovo di fabbrica un nome non ce l'ha.
+S4: Nel mio progetto non c'è la topologia, la mappa di chi sta su quale porta: quindi il nome, da solo, non posso darglielo.
+S5: «Il LED della porta è verde: allora il ricambio è guasto?» No. Quel verde dice solo che il cavo c'è.
+S6: Collega il portatile alla rete: il mio software lo segna «pronto per l'assegnazione». Il nodo c'è, gli manca il nome.
+S7: Lo scegli dal suo indirizzo MAC, lo fai lampeggiare per essere sicuro che è lui, e gli dai il nome del progetto.
+S8: Eccolo: lo riconosco dal nome e gli do l'IP. Nodo nuovo? Prima il nome.
+S9: Vuoi impararlo? Commenta NOME. Mr. Automation Italia: dove la curiosità diventa competenza.

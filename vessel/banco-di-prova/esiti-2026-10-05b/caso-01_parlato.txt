@@ -1,0 +1,8 @@
+S1: Questo pezzo di alluminio passa, e il PLC deve saperlo senza toccarlo. Induttivo o capacitivo?
+S2: È metallo, quindi prendo l'induttivo. Fa un campo magnetico, e solo il metallo ne assorbe energia. Con l'acciaio: acceso.
+S3: Passa il pezzo… spento. Ma è metallo: è guasto?
+S4: Guasto no. La distanza di intervento dichiarata vale per l'acciaio: in un induttivo standard, sull'alluminio è meno della metà. Lo avvicino: acceso.
+S5: In lavatrice, però, il PLC vuole il livello dell'acqua. Non è metallo: serve il capacitivo.
+S6: Sente l'acqua attraverso il vetro: l'acqua ha permittività circa ottanta, il vetro circa cinque.
+S7: E il vetro? Lo vede, se la sensibilità è troppo alta: resta acceso senza acqua. La abbasso finché il vetro da solo non lo accende.
+S8: Prima il materiale, poi il sensore, poi la regolazione. Commenta SENSORE. Mr. Automation Italia: dove la curiosità diventa competenza.

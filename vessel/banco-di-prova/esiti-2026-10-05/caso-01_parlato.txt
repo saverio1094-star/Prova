@@ -1,0 +1,7 @@
+S1: Questo pezzo passa sul nastro, e il PLC deve saperlo senza toccarlo. Induttivo o capacitivo?
+S2: È metallo, quindi induttivo: fa un campo magnetico. Ci passo una chiave d'acciaio, ne assorbe energia, e lui si accende.
+S3: Ma passa il pezzo… spento. È alluminio. Allora non lo vede: ci vuole il capacitivo?
+S4: No: lo vede, ma più vicino. Su un induttivo standard, la distanza di intervento dichiarata vale per l'acciaio. Sull'alluminio è meno della metà.
+S5: Quindi non lo cambio: lo avvicino. Stesso pezzo… acceso.
+S6: In lavatrice serve il livello dell'acqua, e l'acqua non è metallo: quindi capacitivo. La sente attraverso questo vetro: ha una permittività molto più alta.
+S7: Prima il materiale, poi sensore e distanza. Vuoi impararlo? Commenta SENSORE. Mr. Automation Italia: dove la curiosità diventa competenza.

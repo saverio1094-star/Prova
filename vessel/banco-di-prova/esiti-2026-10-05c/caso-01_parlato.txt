@@ -1,0 +1,10 @@
+S1: Quando passa questo pezzo, il PLC deve saperlo. Senza toccarlo. Induttivo o capacitivo?
+S2: È metallo, quindi induttivo. Fa un campo magnetico alternato: il metallo che ci entra ne assorbe energia, e l'uscita commuta.
+S3: La chiave d'acciaio la vede. Ma passa il pezzo… il LED resta spento. Lo cambio?
+S4: Cambiarlo non serve: è alluminio. Nell'induttivo standard la distanza di intervento vale per l'acciaio. Sull'alluminio è meno della metà.
+S5: Quindi lo avvicino. Ripassa il pezzo… acceso.
+S6: In lavatrice il PLC vuole il livello. Ma l'acqua non è metallo: serve il capacitivo.
+S7: Fa un campo elettrico e sente ogni materiale: il vetro poco, l'acqua tantissimo. Così la vede attraverso il vetro.
+S8: Ma anche il vetro lo sente: se è troppo sensibile, resta acceso senz'acqua. Abbasso la sensibilità finché si spegne.
+S9: Quindi: prima guardi di cosa è fatto, poi lo provi su quel materiale.
+S10: Vuoi impararlo? Commenta SENSORE. Mr. Automation Italia: dove la curiosità diventa competenza.

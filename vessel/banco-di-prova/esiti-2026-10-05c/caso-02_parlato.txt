@@ -1,0 +1,8 @@
+S1: Ho perso un nodo! Me l'hanno cambiato con uno identico, e non lo trovo.
+S2: Lo so cosa pensi: il LED è verde, gli rimetti lo stesso IP e riparte.
+S3: Verde vuol dire solo che il cavo c'è. Io i nodi non li cerco per IP: li cerco per nome.
+S4: Uno nuovo di fabbrica il nome non ce l'ha. E qui non posso darglielo io: il progetto non dice a quale porta è attaccato.
+S5: Col PC lo vedi: c'è, col suo indirizzo MAC, ma senza nome. Non è guasto.
+S6: Fai lampeggiare il LED per essere sicuro che sia lui, poi gli scarichi il nome del progetto: quello del vecchio.
+S7: Eccolo! L'ho trovato dal nome. L'IP glielo do io.
+S8: Vuoi impararlo? Commenta NOME. Mr. Automation Italia: dove la curiosità diventa competenza.
