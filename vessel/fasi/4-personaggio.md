@@ -1,5 +1,9 @@
 # Passo 4 · Personaggio (solo se manca)
 
+> Questa ricetta la usa **Euclid** nel giro 0 (`fasi/5-immagini.md`), nella chat ChatGPT del reel. Euclid genera, salva
+> le versioni in `04_Riferimenti_Visivi/personaggi/` e torna da Vessel: non può aspettare Saverio. Vessel gliele mostra e
+> Saverio sceglie vedendole.
+
 ## Intento
 Avere un personaggio riconoscibile e coerente in tutte le immagini e le clip. Si fa **solo** se il reel ha bisogno di un
 personaggio che non c'è in `04_Riferimenti_Visivi/personaggi/` (indice in `personaggi/LEGGIMI.md`) o di una sua variante.
@@ -13,7 +17,7 @@ Dalla scheda dei fatti: com'è fatto il componente e da cosa lo riconosce un tec
 
 ## Come si fa bene
 1. **Un personaggio che esiste si allega, non si ridescrive.** Mister Automation = `serafino_anchor.webp` (cappellino MA,
-   occhiali da vista, occhiali protettivi al collo, polo nera MA, pantaloni neri). Il secondo personaggio umano è il capo
+   occhiali da vista, occhiali protettivi al collo, maglietta nera MA, pantaloni neri). Il secondo personaggio umano è il capo
    manutenzione (`capo-manutenzione_anchor.png`, e `_schiena.png` quando sta di spalle). Mr. PLC, la scatola, non è il tecnico.
    Descriverlo a parole fa nascere un altro personaggio; l'anchor allegato no.
 2. **Parti da «da cosa lo riconosce un tecnico?»**: le parti che lo identificano (porte, LED, ghiere, display) e le proporzioni.

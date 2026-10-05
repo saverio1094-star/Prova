@@ -15,7 +15,7 @@ Circa ogni due settimane chiedi a Saverio cosa è uscito davvero: senza questo c
 | Cosa è uscito, keyword, costo | `ARCHIVIO-CONTENUTI.md` § PUBBLICATI | una riga: `Data · Titolo · slug · KEYWORD · crediti` (i crediti sono nel master) |
 | Cosa resta da fare | `01_Piano_Editoriale/CODA-PUBBLICAZIONE.md` | la riga del reel **si toglie** |
 | Stato del reel | master, in testata | `PUBBLICATO AAAA-MM-GG` |
-| Prompt riuscito | `esempi/` della skill, nella cartella del suo strumento | **solo se è stato davvero un colpo riuscito** (approvato al primo colpo): il testo intero + una riga «perché funziona». Se nella cartella ce n'è già uno della stessa forma, il nuovo prende il suo posto: gli esempi restano pochi e diversi |
-| Correzione di Saverio | `quaderno.md` | al massimo una coppia ⛔ prima → ✅ dopo per reel, con le regole del quaderno |
+| Prompt riuscito | `esempi/` della skill, nella cartella del suo strumento | **solo se è stato davvero un colpo riuscito** (approvato al primo colpo): il testo intero + una riga «perché funziona». Se nella cartella ce n'è già uno della stessa forma, proponi a Saverio in una riga quale sostituire; senza il suo ok resta il vecchio. Gli esempi restano pochi e diversi |
+| Correzione di Saverio | `quaderno.md` | ogni correzione esplicita di Saverio diventa una voce ⛔ prima → ✅ dopo con le sue parole (a quota 10 se ne toglie una); più i contatori delle voci che il reel ha toccato, secondo come ha reagito lui |
 
 Dati che mancano (data, views): si chiedono a Saverio, non si stimano.

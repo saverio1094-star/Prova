@@ -1,8 +1,18 @@
 # Banco di prova di Vessel
 
-## A cosa serve
-Ogni modifica alla skill (una voce nuova nel quaderno, una pagina riscritta, un esempio cambiato) **si prova qui prima**.
-Una regola nata da un errore può rovinare i lavori che riuscivano: il banco lo fa vedere prima che succeda in un reel vero.
+> **Stato dal 5/10: congelato.** Il banco non si usa finché non esce un reel vero fatto con Vessel dall'inizio alla fine,
+> immagini e Flow compresi. In due giorni ha prodotto quattro giri e otto regole nuove su casi finti, ed è lo stesso
+> meccanismo che ha gonfiato Vincent. Le correzioni arrivano da Saverio, sui reel veri, e vanno nel quaderno.
+
+## A cosa serve (quando si riapre)
+A decidere **cosa togliere o fondere** nel quaderno e nelle pagine, e a provare uno script prima di usarlo. Non serve a
+inventare regole nuove: una regola nata da un errore su un caso finto può rovinare i lavori che riuscivano.
+
+## Dove sta, e perché
+Il banco sta **fuori** dalla cartella della skill (`~/vessel-banco/`), perché dentro ci sono i bersagli. Ogni giro si fa su
+**una copia della skill** da cui si tolgono, prima di lanciare, gli esempi che sono il bersaglio del caso (01, 02, 05 in
+`esempi/parlato/`) e le voci del quaderno che li citano. Dire a chi scrive «non guardarli» non basta: un subagente può
+aprire qualsiasi file che vede.
 
 ## I casi (`casi/`)
 | Caso | Cosa prova | Cosa si nasconde a chi scrive |
@@ -37,5 +47,9 @@ I bersagli (`bersagli/`) si aprono **solo dopo**, per il confronto.
 - **I criteri di successo si scrivono prima del giro** (`esiti-<data>/CRITERI.md`), non dopo.
 - **Gli esempi delle pagine non vengono dai casi del banco**: lo scrittore ci leggerebbe la risposta.
 - Un tentativo per caso è poco: se un caso cambia esito, si rigenera una seconda volta prima di concludere.
+- **Un lettore solo non basta per decidere una regola.** Prima di fidarsi del lettore fresco su un testo, lo stesso testo si
+  dà a 3 lettori nuovi: se si perdono in punti diversi, quello che dice uno solo è rumore.
+- **Un giro conta solo se il testo finale è passato dai suoi controlli** (lettore fresco e limiti). Il 5/10 il giro 05c è
+  stato adottato senza: il caso 02 finale ha ancora la frase sulla topologia, mai riletta da un lettore.
 - **Il tono** non lo misura nessun controllo: Saverio legge la versione vecchia e la nuova come A e B senza sapere quale è
   quale, e sceglie.

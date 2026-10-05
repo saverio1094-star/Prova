@@ -16,8 +16,7 @@ archivio in 4 righe. **Ma ci sono tre problemi grossi:**
 2. **La conoscenza più preziosa della vecchia skill non è entrata.** Le 18 correzioni di Saverio sulla voce (`VOCE-SERAFINO.md`)
    non le legge nessuno, e in alcuni punti la skill nuova dice il contrario.
 3. **Del metodo di Astra è entrata soprattutto la parte che allunga.** Più carte da compilare, più pezzi, più secondi. Il
-   caso 01 è arrivato a 68 s e 10 scene, mentre la v4 approvata diceva le stesse cose in 52 s e 7 scene. In più `timing.py` ha perso il
-   margine che Vincent imponeva, quindi i 56 s dichiarati sono in realtà circa 64.
+   caso 01 è arrivato a 68 s e 10 scene, mentre la v4 approvata diceva le stesse cose in 52 s e 7 scene.
 
 ---
 
@@ -120,7 +119,7 @@ chiusa in tre parole (VOCE §2.18). Queste mosse sono già nella pagina 3.
 **Cura:** «prima della prima battuta» si riduce a 4 righe (cosa distingue · il caso · **massimo 3** pezzi · durata). Le note
 battuta per battuta diventano facoltative, solo per le battute dove si è tolto un assoluto o un'eccezione.
 
-### G5 — Durata: crescita strutturale e `timing.py` senza margine
+### G5 — Durata: una crescita che viene dalla struttura
 
 **La crescita.** «L'indispensabile non si taglia» + «la durata parte dai pezzi» + «2-4 pezzi» spingono verso reel sempre più lunghi, e
 niente nella skill li comprime.
@@ -128,17 +127,14 @@ niente nella skill li comprime.
 - La v4 dice la regolazione in una frase; Vessel ci mette due battute più la sintesi.
 - Il COLLAUDO-05 lo scrive al punto 1 di «resta aperto» e lo lascia lì.
 
-**Il margine perso.** In `timing.py` la funzione `taglio()` usa `secondi <= t`: 15 parole a 2,5 parole/s = 6,0 s → clip da 6 s,
-**margine zero**. Vincent aveva una regola diversa (prompt di Pneuma, 14.6): «15 parole = 6 s di parlato ⇒ clip da 8 s». A questo si aggiungono
-due contraddizioni dentro Vessel:
-- `lock-flow.md` chiede in ogni clip un ultimo tratto «NO WORDS — …, mouth closed», che a margine zero non ha spazio;
-- `fasi/6` dice «se una battuta sta a margine zero: `delivery` svelto», cioè voce accelerata, quella che Saverio ha bocciato in §2.17.
-
-Nel caso 02 finale ci sono 4 clip su 8 a margine zero, e il «controllo veloce» dello script stesso dà **64 s** invece dei 56
-dichiarati. Anche la v4, in produzione, ha dovuto portare S6 da 8 a 10 s.
+**Il margine: correzione mia.** In una prima versione di questa analisi avevo scritto che `timing.py` aveva perso il
+margine imposto da Vincent («15 parole = 6 s di parlato ⇒ clip da 8 s»), perché `taglio()` usa `secondi <= t`. Ho fatto
+girare lo script sulla v4 approvata: anche lei ha 4 clip a margine zero (S1, S2, S4, S5), e in Flow S1 e S2 sono uscite
+bene. L'unica clip che è dovuta salire, S6 (22 parole, da 8 a 10 s), lo script attuale la mette già a 10 s. Lo script
+quindi riproduce quello che è successo in produzione. Con 1 s di margine la v4 diventerebbe di circa 64 s e verrebbe
+bocciata. **`timing.py` resta com'è**: il problema è il numero di idee, non il conteggio dei secondi.
 
 **Cura:**
-- In `timing.py`, margine minimo di circa 1 s: la clip è lo scalino sopra `secondi + 1`.
 - Massimo 3 pezzi. Se ne servono 4, il tema si divide **al passo 1**, quando si propongono i titoli, non a parlato già scritto.
 
 ---
@@ -202,7 +198,6 @@ dichiarati. Anche la v4, in produzione, ha dovuto portare S6 da 8 a 10 s.
 1. **Congelare la skill.** Niente più giri di banco.
 2. **Correzioni piccole, in una sessione, con un editor solo e un backup prima:**
    - riempire il quaderno con 6-8 correzioni di VOCE-SERAFINO (G3);
-   - aggiungere 1 s di margine in `timing.py` e togliere «delivery svelto» da `fasi/6` (G5);
    - massimo 3 pezzi; se ne servono di più si divide al passo 1 (G5);
    - ridurre «prima della prima battuta» a 4 righe e rendere facoltative le note battuta per battuta (G4);
    - passo 4 → Euclid, giro 0 della pagina 5 (Gemini 2);

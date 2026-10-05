@@ -12,9 +12,11 @@ errore plausibile e limite che lo corregge, dove sta davvero il componente, cosa
 
 ## Cosa consegni
 Nel master, sezioni 1, 3 e 4 di `modelli/master.md`:
-- **prima della prima battuta** (è il lavoro che decide il reel, come lo fa Astra): cosa deve saper distinguere chi guarda ·
-  il caso preciso · **l'indispensabile**: i 2-4 pezzi senza cui chi guarda domani sbaglia, ognuno con l'errore che evita e il
-  fatto della scheda (F…) · la **durata obiettivo** che ne viene, col motivo · la chiusura che il contenuto autorizza.
+- **prima della prima battuta** (è il lavoro che decide il reel, come lo fa Astra), in poche righe: cosa deve saper
+  distinguere chi guarda · il caso preciso · **l'indispensabile**: **al massimo 3** pezzi senza cui chi guarda domani sbaglia,
+  ognuno con l'errore che evita e il fatto della scheda (F…) · la **durata obiettivo** che ne viene, col motivo · la chiusura
+  che il contenuto autorizza. **Se ti servono 4 pezzi, il tema è da due reel**: prima di scrivere lo dici a Saverio in una
+  riga, con le due metà, e lui sceglie.
   **Un pezzo è indispensabile** se senza di lui chi guarda domani fa una cosa sbagliata davanti al componente del reel; i
   dettagli di contorno (fuso orario, permessi, software o modelli diversi) restano nella scheda e vanno in descrizione.
   **Ogni pezzo si dice con il suo appiglio**: cosa fa chi guarda (il gesto, il controllo) e, se c'è un termine che in reparto
@@ -25,15 +27,16 @@ Nel master, sezioni 1, 3 e 4 di `modelli/master.md`:
 - **il discorso**: le battute numerate B1, B2…, scritte di fila, **senza secondi né clip**. È la prima consegna e si scrive
   prima di pensare al taglio;
 - **il taglio**, come passo separato: tabella battuta · clip (4, 6, 8 o 10 s), una battuta per clip. Se una battuta non sta
-  in 10 s, prima cerchi una ridondanza da togliere; se non c'è, la dividi in **due battute dove cambia il ragionamento**,
-  mai a metà frase (Flow rigenera la voce a ogni clip). Scrivi quale ridondanza hai tolto;
+  in 10 s, prima cerchi una ridondanza da togliere (un dato detto due volte, mai una parola d'atteggiamento: quaderno,
+  voce 1); se non c'è, la dividi in **due battute dove cambia il ragionamento**, mai a metà frase (Flow rigenera la voce a ogni clip). Scrivi quale ridondanza hai tolto;
 - **il piano scena per scena**: mondo, set, e per ogni scena cosa si vede, dove sta il componente, cosa è acceso o spento,
   e **il gesto** del personaggio legato a una parola;
-- **le note battuta per battuta**: tabella battuta · cosa fa (a quale domanda risponde) · fatto F · alternativa scartata e
-  perché (es. «scarto "il termico sente la temperatura del motore": è un'altra misura»). È qui che si vedono gli assoluti e
-  le eccezioni: se scarti un'eccezione, scrivi perché non cambia la decisione di chi guarda;
+- **le note, solo dove servono**: per le battute dove hai tolto un assoluto o lasciato fuori un'eccezione, una riga
+  battuta · fatto F · alternativa scartata e perché (es. «scarto "il termico sente la temperatura del motore": è un'altra
+  misura»). Non è una tabella per ogni battuta: Astra l'ha scritta per spiegare il suo metodo, non per produrre;
 - il copione in `copioni/<slug>_parlato.txt` (una riga per scena, `S1: …`) e l'esito dei controlli.
-A Saverio in chat: discorso + taglio + piano in forma corta e l'esito dei controlli. ⏸ Il tono lo giudica lui.
+A Saverio in chat: il filo in una riga, **il discorso**, la durata e l'esito dei controlli in una riga. Il piano scena per
+scena resta nel master: Saverio lo vede come griglia al passo 5 («vogliamo vedere, non leggere»). ⏸ Il tono lo giudica lui.
 
 ## Come si scrive (le mosse)
 1. **Prima il filo e l'indispensabile, poi la prima battuta** (vedi «Cosa consegni»). Esempio di filo: «lo scatto del
@@ -53,7 +56,8 @@ A Saverio in chat: discorso + taglio + piano in forma corta e l'esito dei contro
    è vero e viene dalla scheda: i finti ribaltamenti («tutto quello che sai è sbagliato») i tecnici li riconoscono e li bocciano.
 6. **Porta con te chi guarda**: al tu, in prima persona di chi lavora («Apriamo il quadro», «Misuro la corrente»). Le
    proprietà del componente diventano **gesti del tecnico** che si possono vedere.
-7. **Chiudi la promessa, poi una sola CTA.** Una sintesi corta e utile («Prima il perché, poi il riarmo: ecco l'ordine»),
+7. **Chiudi la promessa, poi una sola CTA.** Una sintesi corta e utile che risponde alla domanda dell'apertura («Premi
+   reset e riparti?» → «Prima il perché, poi il riarmo: ecco l'ordine»), non un motto che starebbe su qualsiasi reel;
    poi la keyword che porta a corsi o webinar, poi la tagline. La conclusione sta in piedi anche senza la CTA.
    Formule pronte in `01_Piano_Editoriale/LIBRERIA-CTA.md`; keyword riciclabili (automazione, metodo, diagnosi, plc) o una
    dedicata se sul tema si costruisce qualcosa.
@@ -121,4 +125,5 @@ Gli esempi più vecchi hanno CTA e uso del voi di allora: la CTA e il tu si pren
 
 ## Mestiere che puoi superare scrivendo il motivo
 6-7 scene · durata obiettivo dal filo, riferimento 48-56 s (i 10 reel migliori; il loop del mercoledì ha la sua misura) ·
-una persona sola che parla per clip · battute fino a ~22 parole in 10 s. Se la storia chiede altro, una riga nel master § Deviazioni.
+una persona sola che parla per clip · battute fino a ~22 parole in 10 s (se il contenuto non ci sta si toglie un'idea, non si
+comprime la frase: la priorità è la qualità del parlato, Saverio 30/9). Se la storia chiede altro, una riga nel master § Deviazioni.

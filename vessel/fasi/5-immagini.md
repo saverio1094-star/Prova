@@ -2,6 +2,8 @@
 
 > Questa pagina la legge **Euclid**, il subagente che lavora in ChatGPT nel Chrome di Saverio. Vessel lo lancia due volte:
 > **giro A** = madre + griglia; **giro B** (dopo che Saverio ha approvato la griglia) = singole + copertina.
+> Se il reel ha bisogno di un personaggio che non c'è, prima c'è il **giro 0** = il personaggio, con la ricetta di
+> `fasi/4-personaggio.md`, nella stessa chat del reel.
 > Input del giro A: percorso del master (parlato, piano scena per scena, mondo e set), scheda dei fatti, anchor da allegare.
 > Input del giro B: le correzioni di Saverio sulla griglia, se ci sono.
 
@@ -64,3 +66,5 @@ planimetria in 3 righe · CAM1 = madre, CAM2… (focale · altezza · distanza �
 - ChatGPT sbaglia spesso la M del logo: non si rigenera, si corregge in post con `scripts/fix_logo.py` (istruzioni nel file e
   in `modelli/chrome.md` § Logo). L'originale si tiene in `plate/_originali/`.
 - Cosa riportare a Vessel: percorsi, «cosa si vede» per ogni immagine, generazioni usate, dubbi veri (una riga ciascuno).
+- **Se ti blocchi** (login, «Reconnect», ChatGPT che non risponde, download che non parte): non puoi chiedere a Saverio.
+  Fermati e torna da Vessel con il link della chat, i file già salvati e il punto esatto a cui eri.

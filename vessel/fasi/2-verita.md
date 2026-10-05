@@ -14,7 +14,9 @@ Titolo · slug · filo provvisorio · cosa deve distinguere chi guarda · eventu
 
 ## Cosa consegni
 `02_Script_Reel/copioni/<slug>_fatti.md`, nella forma di `modelli/scheda-fatti.md`, e a Vessel un riassunto di 5 righe:
-cosa è confermato, cosa no, cosa hai aggiunto ai notebook.
+cosa è confermato, cosa no, cosa hai aggiunto ai notebook. **La prima riga dice se la promessa del titolo regge**
+(«il titolo regge» oppure «il titolo promette X, ma la scheda dice Y»): se non regge, Vessel si ferma e lo dice a Saverio
+prima di scrivere.
 
 ## Come si fa bene
 1. **Prima domanda al notebook: «le fonti coprono questo tema?».** Il buco si scopre adesso, non a parlato scritto.
@@ -45,10 +47,11 @@ Com'è fatto fisicamente un pezzo: chiedi al notebook «in quale pagina c'è il 
 `notebooklm source fulltext` (la pagina stampata non è la pagina del PDF).
 
 ## Quando un'informazione manca
-1. **Si cerca** su fonti ufficiali: costruttori (manuali, guide tecniche, FAQ), normative, documenti di supporto. Strumenti:
-   WebSearch/WebFetch, oppure Sider Scholar dentro ChatGPT se Vessel te lo chiede (nel composer `@` → «Sider Scholar», gli si
-   chiede di cercare risposte **con le URL**, mai di giudicare un testo). Si salva la ricerca in
-   `copioni/<slug>_ricerca.md`: tabella F1…Fn (fonte · URL · tipo). Esempio: `esempi/fase1/ricerca-scholar-rele.md`.
+1. **Si cerca** su fonti ufficiali: costruttori (manuali, guide tecniche, FAQ), normative, documenti di supporto, con
+   **WebSearch e WebFetch**: li usi tu, senza passare da Vessel né da Saverio. Sider Scholar (in ChatGPT, nel Chrome di
+   Saverio) si usa solo se lo chiede Saverio: cerca soprattutto articoli scientifici e ogni «Reconnect» lo deve cliccare lui.
+   Si salva la ricerca in `copioni/<slug>_ricerca.md`: tabella F1…Fn (fonte · URL · tipo). Esempio della forma:
+   `esempi/fase1/ricerca-scholar-rele.md` (lì la ricerca l'aveva fatta Sider; la forma è la stessa).
 2. **Si carica nel notebook giusto** ogni URL buona (pagina ufficiale, manuale, scheda PDF):
    `~/.local/bin/notebooklm source add "<url>" --type url -n ae39f678 --timeout 120`, poi `source list -n ae39f678`.
    Si scartano: schede di vendita delle norme senza testo, copie su siti terzi, prodotti diversi da quello del reel.

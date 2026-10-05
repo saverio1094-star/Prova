@@ -44,3 +44,5 @@ Niente domande in mezzo; al massimo una riga ❓ in fondo, se c'è un dubbio ver
 1. Slug `AAAA-MM-GG_argomento` (data di uscita). Master nuovo da `modelli/master.md`.
 2. Riga in coda 🟠 IN CORSO con titolo **e** slug (backup della coda prima di toccarla).
 3. Vai dritto al passo 2 (Granite) e poi alla storia: il prossimo messaggio a Saverio è il parlato pronto, non una conferma.
+   Ci sono solo due eccezioni, una riga ciascuna: la scheda dice che la promessa del titolo non regge (proponi il titolo
+   corretto), oppure il tema chiede più di 3 pezzi indispensabili (proponi le due metà).

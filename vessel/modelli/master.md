@@ -20,7 +20,7 @@ Scheda dei fatti: `copioni/<slug>_fatti.md` <· ricerca: `copioni/<slug>_ricerca
 | Battuta | Clip | Ridondanza tolta o battuta divisa |
 |---|---:|---|
 | B1 | <s> | — |
-**Note battuta per battuta**: `copioni/<slug>_parlato.md` (cosa fa · F · alternativa scartata)
+**Note** (solo dove si è tolto un assoluto o lasciata fuori un'eccezione): `copioni/<slug>_parlato.md` (battuta · F · alternativa scartata)
 Copione per il timing: `copioni/<slug>_parlato.txt`
 
 ## 3 · Piano scena per scena

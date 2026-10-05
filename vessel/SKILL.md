@@ -26,7 +26,7 @@ che dice. Input: …». La pagina contiene tutto quello che gli serve.
 | **Granite** | verità tecnica: interroga i notebook, cerca quello che manca, scrive la scheda dei fatti | `fasi/2-verita.md` |
 | **Aqua Regia** | lettore fresco: legge solo il discorso e risponde a tre domande | `controlli/lettore-fresco.md` |
 | **Damocles** | controllo dei limiti: legge solo scheda e discorso, dice battuta per battuta se il limite di ogni fatto è arrivato a voce | `controlli/limiti.md` |
-| **Euclid** | immagini in ChatGPT, nel Chrome di Saverio | `fasi/5-immagini.md` |
+| **Euclid** | immagini in ChatGPT, nel Chrome di Saverio; anche il personaggio nuovo, quando manca | `fasi/5-immagini.md` (+ `fasi/4-personaggio.md`) |
 | **Hypnosis** | JSON e clip in Google Flow | `fasi/6-flow.md` |
 | **Offering** | pacchetto di pubblicazione, RTF e PDF | `fasi/7-consegna.md` |
 
@@ -37,12 +37,14 @@ Le tre fasi stanno in **tre chat separate**. Il lavoro passa da una chat all'alt
 **FASE 1 — dal titolo alle immagini** («Vessel fase 1», «nuovo reel», «titoli per …»)
 1. **Titolo** → `fasi/1-titoli.md`. 20 titoli, Saverio sceglie. ⏸ *Si aspetta la scelta.* Dopo la scelta si va dritti fino
    alla storia: il messaggio successivo di Vessel è il lavoro fatto, non una domanda.
-2. **Verità tecnica** → Granite, `fasi/2-verita.md`. Scheda dei fatti con fonti.
-3. **Storia e parlato** → `fasi/3-storia-parlato.md` (il cuore), col metodo di Astra: prima della prima battuta
-   l'indispensabile e la durata, poi discorso continuo, taglio in clip, note battuta per battuta, piano scena per scena,
-   poi i controlli: Aqua Regia, Damocles, `timing.py`. ⏸ *Saverio legge il parlato: il tono lo giudica lui.* Il suo ok vale
-   anche per scaricare le immagini del reel da ChatGPT.
-4. **Personaggio**, solo se manca → `fasi/4-personaggio.md`.
+2. **Verità tecnica** → Granite, `fasi/2-verita.md`. Scheda dei fatti con fonti. Se la scheda smentisce o non conferma
+   la promessa del titolo, ⏸ ti fermi: una riga a Saverio con il titolo corretto che proponi.
+3. **Storia e parlato** → `fasi/3-storia-parlato.md` (il cuore): prima della prima battuta il filo, al massimo 3 pezzi
+   indispensabili e la durata, poi discorso continuo, taglio in clip, piano scena per scena, poi i controlli: Aqua Regia,
+   Damocles, `timing.py`. ⏸ *Saverio legge il discorso: il tono lo giudica lui.* Il suo ok vale anche per scaricare le
+   immagini del reel da ChatGPT.
+4. **Personaggio**, solo se manca → Euclid, giro 0 di `fasi/5-immagini.md` (ricetta in `fasi/4-personaggio.md`).
+   ⏸ *Saverio lo sceglie vedendolo.*
 5. **Storyboard e immagini** → Euclid, `fasi/5-immagini.md`. Madre + griglia con tutte le scene.
    ⏸ *Saverio guarda la griglia e la approva vedendola: è il momento in cui si corregge.* Poi singole e copertina.
    Fine fase 1: master aggiornato, «Prossimo passo: Vessel fase 2».
@@ -79,7 +81,9 @@ quale consiglio va cambiato.
 ## Dove sta cosa
 **Nella skill** (`~/.claude/skills/vessel/`): `fasi/` una pagina per passo · `controlli/lettore-fresco.md` ·
 `modelli/` (master, scheda dei fatti, testi fissi di Flow, ricette ChatGPT e Chrome, consegna) · `esempi/` (parlati approvati,
-immagini, Flow, consegna) · `scripts/` · `quaderno.md` · `banco-di-prova/`.
+immagini, Flow, consegna) · `scripts/` · `quaderno.md`.
+Il banco di prova sta **fuori** dalla skill (`~/vessel-banco/`), apposta: dentro ci sono i bersagli, e chi scrive non deve
+poterli aprire. In produzione non serve.
 
 **Nel progetto** (`/Users/admin/Claude/Mr Automation Academy/`), si leggono e non si copiano:
 - `01_Piano_Editoriale/` → `PIANO-EDITORIALE.md` §5 (calendario), `CODA-PUBBLICAZIONE.md` (slot), `LIBRERIA-CTA.md`, `BROADCAST.md`
@@ -111,9 +115,11 @@ Un'informazione sta in un posto solo: il master rimanda ai file, non li ricopia.
 - Fermati solo per una decisione sua o per un blocco vero (login, file che manca, reconnect): una riga, cosa serve.
 
 ## Imparare dalle correzioni: `quaderno.md`
-Quando Saverio corregge qualcosa, la correzione diventa **un esempio prima → dopo** nel quaderno, non un divieto nelle pagine.
-Il quaderno ha **al massimo 10 voci**, ognuna con il contatore «ha aiutato N / ha sviato N». Una voce nuova entra solo se ne
-esce una, e solo dopo averla provata sul banco di prova (`banco-di-prova/LEGGIMI.md`): una regola nata da un errore può
-rovinare i lavori riusciti. Lo stesso vale per le pagine: una correzione scritta direttamente in una pagina è una voce del
-quaderno senza contatore. **Provata vuol dire rigenerata**: almeno 2 casi del banco riscritti con la regola attiva, uno già
-riuscito; controllare che i testi approvati rispettino la regola è una conferma, non una prova. Leggi il quaderno all'inizio di ogni fase e aggiorna i contatori quando una voce è servita.
+Quando Saverio corregge qualcosa, la correzione diventa **un esempio prima → dopo** nel quaderno, con le sue parole, non un
+divieto nelle pagine. Il quaderno ha **al massimo 10 voci**: a quota 10, una nuova entra solo se ne esce una (o due si
+fondono). **Le pagine non si ritoccano per una correzione**: una correzione scritta direttamente in una pagina è una voce del
+quaderno senza contatore, e così il metodo vecchio è arrivato a 70.000 parole. Le pagine cambiano solo quando una voce del
+quaderno si è dimostrata su più reel veri, e allora la voce esce dal quaderno ed entra nella pagina.
+Il contatore «ha aiutato N / ha sviato N» lo muove **Saverio**, non tu: +1 aiutato quando approva una cosa che la voce ti ha
+fatto fare, +1 sviato quando la corregge. Un modello che si giudica da solo dice sempre sì.
+Leggi il quaderno all'inizio di ogni fase.

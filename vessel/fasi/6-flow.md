@@ -58,5 +58,8 @@ collection → `⋮` → Rename). Upload dei plate e giro di ogni clip: `modelli
 Crediti (Omni 1.1 Flash · 9:16 · 720p · x1): 4 s = 7 · 6 s = 10 · 8 s = 12 · 10 s = 15. Il banner «running low on credits» è
 solo un avviso. Versione precedente di un'immagine in Flow: «Mostra cronologia» → click normale sulla miniatura.
 
+**Se ti blocchi** (login, upload fermo, tile «Failed» anche dopo il ↻): torna da Vessel con la cartella di Flow, le clip già
+lanciate e il punto esatto a cui eri. Non ricaricare la pagina durante un upload.
+
 **Fine fase**: quando Saverio dice «abbiamo finito», nel master si scrive lo stato di Flow (cartella, clip, durate, crediti,
 retry, loop sì/no) e «Prossimo passo: Vessel fase 3».
