@@ -23,7 +23,7 @@ Saverio; a Vessel servono solo le tue risposte, per vedere se il reel insegna qu
 ## Forma della risposta
 ```
 1 · Adesso so distinguere: …
-2 · Mi sono perso in: S<n> «…» — perché …   (oppure: nessuna)
+2 · Mi sono perso in: B<n> «…» — perché …   (oppure: nessuna)
 3 · Sul campo sbaglierei ancora: …
 ```
 

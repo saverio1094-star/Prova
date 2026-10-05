@@ -11,7 +11,7 @@ errore plausibile e limite che lo corregge, dove sta davvero il componente, cosa
 (che forma vuole il giorno) e `quaderno.md`.
 
 ## Cosa consegni
-Nel master, sezioni 1, 3 e 4 di `modelli/master.md`:
+Nel master, sezioni 1, 2, 3 e 4 di `modelli/master.md`:
 - **prima della prima battuta** (è il lavoro che decide il reel, come lo fa Astra), in poche righe: cosa deve saper
   distinguere chi guarda · il caso preciso · **l'indispensabile**: **al massimo 3** pezzi senza cui chi guarda domani sbaglia,
   ognuno con l'errore che evita e il fatto della scheda (F…) · la **durata obiettivo** che ne viene, col motivo · la chiusura
@@ -97,8 +97,8 @@ suoi pezzi indispensabili, e nessun salto logico non detto.
 6. **Saverio approva vedendo**: la storia gli arriva come griglia storyboard al passo 5, non come tabella da leggere.
 
 ## I controlli prima di consegnare (al posto di «è scritto bene?»)
-1. **Lettore fresco**: lancia Aqua Regia (`controlli/lettore-fresco.md`) con **solo il discorso**. Passa se le sue risposte
-   coincidono con il filo e con l'errore plausibile della scheda. Se si perde in una battuta, riscrivi quella battuta.
+1. **Lettore fresco**: lancia Aqua Regia (`controlli/lettore-fresco.md`) con **solo il discorso**. Quando passa lo dice
+   la stessa pagina, in fondo («Come lo usa Vessel»). Se si perde in una battuta, riscrivi quella battuta.
 2. **Verità e limiti**: lancia Damocles (`controlli/limiti.md`), un subagente nuovo che riceve **solo la scheda
    dei fatti e il discorso**. Il controllo non lo fai tu: chi ha scritto il testo ci legge quello che voleva dire. Passa se
    ogni affermazione sta nella scheda e ogni limite che serve è arrivato a voce. Una battuta col limite mancante si riscrive;

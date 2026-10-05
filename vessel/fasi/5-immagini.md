@@ -37,7 +37,7 @@ Il download dalla chat è già autorizzato da Saverio quando approva il parlato;
 3. **Il componente sta dove lo trova un manutentore, già montato**, all'altezza e dal lato della scheda dei fatti. Prima di
    dire che un'immagine va bene, guardala come un tecnico: altezza e lato del componente contro la scheda del set.
    Il 2/10 un sensore più alto dei pezzi e uno sulla sponda sbagliata hanno costretto Saverio a rifare due plate a mano.
-4. **La griglia ha tutte le scene**: una sola immagine 2:3, S1 (la madre) in cima a tutta larghezza, sotto 3 righe da 2
+4. **La griglia ha tutte le scene**: una sola immagine 2:3, S1 (la madre) in cima a tutta larghezza, sotto, righe da 2
    riquadri verticali. Ogni riquadro: la battuta fra virgolette · camera · primo piano · il personaggio con **un verbo** in
    maiuscolo e le mani · cosa è acceso o spento. **Un set per riquadro.** Si corregge sulla griglia, una correzione per
    messaggio con «tutti gli altri riquadri restano identici»; le singole partono solo dalla griglia approvata.

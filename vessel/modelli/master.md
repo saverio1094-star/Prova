@@ -48,7 +48,7 @@ retry <…> · finale in loop <sì/no> · chiusa da Saverio <data>
 
 ## 8 · Deviazioni dal mestiere e correzioni di Saverio
 - <scelta> — perché <una riga>
-- Correzione di Saverio: ⛔ <prima> → ✅ <dopo> (candidata al quaderno: sì/no)
+- Correzione di Saverio: ⛔ <prima> → ✅ <dopo> (a fine reel entra nel quaderno, `fasi/8-archivio.md`)
 
 ## Prossimo passo
 <Vessel fase 2 | Vessel fase 3 | archivio quando esce>

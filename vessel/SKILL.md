@@ -80,7 +80,7 @@ quale consiglio va cambiato.
 
 ## Dove sta cosa
 **Nella skill** (`~/.claude/skills/vessel/`): `fasi/` una pagina per passo · `controlli/lettore-fresco.md` ·
-`modelli/` (master, scheda dei fatti, testi fissi di Flow, ricette ChatGPT e Chrome, consegna) · `esempi/` (parlati approvati,
+`modelli/` (master, scheda dei fatti, testi fissi di Flow, ricette ChatGPT e Chrome) · `esempi/` (parlati approvati,
 immagini, Flow, consegna) · `scripts/` · `quaderno.md`.
 Il banco di prova sta **fuori** dalla skill (`~/vessel-banco/`), apposta: dentro ci sono i bersagli, e chi scrive non deve
 poterli aprire. In produzione non serve.
@@ -120,6 +120,7 @@ divieto nelle pagine. Il quaderno ha **al massimo 10 voci**: a quota 10, una nuo
 fondono). **Le pagine non si ritoccano per una correzione**: una correzione scritta direttamente in una pagina è una voce del
 quaderno senza contatore, e così il metodo vecchio è arrivato a 70.000 parole. Le pagine cambiano solo quando una voce del
 quaderno si è dimostrata su più reel veri, e allora la voce esce dal quaderno ed entra nella pagina.
-Il contatore «ha aiutato N / ha sviato N» lo muove **Saverio**, non tu: +1 aiutato quando approva una cosa che la voce ti ha
-fatto fare, +1 sviato quando la corregge. Un modello che si giudica da solo dice sempre sì.
+Il contatore «ha aiutato N / ha sviato N» lo decide la **reazione di Saverio**, non il tuo giudizio: lo scrivi tu in
+archivio (`fasi/8-archivio.md`), +1 aiutato quando lui approva una cosa che la voce ti ha fatto fare, +1 sviato quando la
+corregge. Un modello che si giudica da solo dice sempre sì.
 Leggi il quaderno all'inizio di ogni fase.
